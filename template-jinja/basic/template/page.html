@@ -1,0 +1,14 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>{{ title }}</title>
+</head>
+<body>
+    <p>{{ users }}</p>
+<table>
+   {% for user in users %}
+   <tr><td>{{ user[1] }}</td><td>{{ user[2] }}</td></tr>
+   {% endfor %}
+</table>
+</body>
+</html>

@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block content %}
+<table>
+   {% for user in users %}
+   <tr><td>{{ user[1] }}</td><td>{{ user[2] }}</td></tr>
+   {% endfor %}
+</table>
+<h1>Routes</h1>
+<p>GET: /</p>
+<p>GET: /user</p>
+<p>POST: /user</p>
+<p>GET: /user/{id}</p>
+<p>PUT: /user/{id}</p>
+<p>DELETE: /user/{id}</p>
+{% endblock %}

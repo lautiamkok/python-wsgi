@@ -1,0 +1,15 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>{{ title }}</title>
+</head>
+<body>
+    <p>{{ page.title }}</p>
+    <p>{{ page.users }}</p>
+<table>
+   {% for user in page.users %}
+   <tr><td>{{ user['first_name'] }}</td><td>{{ user['last_name'] }}</td></tr>
+   {% endfor %}
+</table>
+</body>
+</html>
